@@ -1,0 +1,5 @@
+{
+  "name": "Geospatial Zone",
+  "description": "Chain multiple geospatial operations together. Upload vector files, apply transformations like buffer, simplify, and centroid, and visualize results on an interactive map.",
+  "requestFramePermissions": []
+}

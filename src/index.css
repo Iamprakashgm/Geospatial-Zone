@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
+  --font-serif: 'Georgia', serif;
+}
+
+:root {
+  --bg: #E4E3E0;
+  --ink: #141414;
+  --line: #141414;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+}
+
+/* Custom scrollbar for technical look */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+  border-left: 1px solid var(--line);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ink);
+}
