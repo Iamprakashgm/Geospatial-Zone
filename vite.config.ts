@@ -6,12 +6,7 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    /**
-     * Set the base path for GitHub Pages.
-     * If your URL is https://<username>.github.io/<repo>/, set base: '/<repo>/'.
-     * If you use a custom domain, set base: '/'.
-     */
-    // base: '/geospatial-zone/', 
+    base: '/Geospatial-Zone/', 
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
